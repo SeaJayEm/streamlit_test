@@ -159,9 +159,9 @@ def afficher_contenu(selection):
             st.image("https://raw.githubusercontent.com/SeaJayEm/streamlit_test/refs/heads/main/gaia3.jpg")
                   
 if st.session_state["authentication_status"]:
-    st.title(f"Bienvenue {utilisateur}")
     # Création du menu
     with st.sidebar:
+        st.write(f"Bienvenue {utilisateur}")
             # Le bouton de déconnexion
         authenticator.logout("Déconnexion")
         selection = option_menu(
