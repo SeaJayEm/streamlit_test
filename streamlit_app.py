@@ -143,6 +143,7 @@ utilisateur = st.session_state.get("name", "utilisateur inconnu")
 def afficher_contenu(selection):
     if selection == "👋 Accueil":
         st.write("Bienvenue sur la page d'accueil !")
+        st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnd4cnpvMjV5Zm52azU5M2NlYXBsNmxpaGxieWx5eGVobTh5YjhrYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYC0LajbaPoEADu/giphy.webp")
     elif selection == "🐱 Photos de Gaïa":
         st.markdown('<h3 class="header-center">Voici mon album de photos de Gaïa, le plus beau chat du monde !</h1>', unsafe_allow_html=True)
         col1, col2, col3 = st.columns(3)
